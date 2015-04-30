@@ -6,9 +6,9 @@
       <div class="name"><%= act.name %></div>
       <div class="description"><%= act.description %></div>
       <div class="costs">
-        <div class="cost">Cost: <%= act.in_units("cost", act.cost) %></div>
-        <div class="cost">Effort: <%= act.in_units("effort", act.effort) %></div>
-        <div class="cost"><%= act.in_units("time", act.time) %></div>
+        <div class="cost">Cost: <%= act.cost_units(act.cost) %></div>
+        <div class="cost">Effort: <%= act.effort_units(act.effort) %></div>
+        <div class="cost"><%= act.time_units(act.time) %></div>
       </div>
     </div>
   <% end %>
