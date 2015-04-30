@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: kindness_development
+  pool: 5
+  username: postgres
+  password: 
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: kindness_test
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password: 
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: kindness_production
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password: 

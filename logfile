@@ -1,0 +1,4 @@
+FATAL:  could not open directory "pg_tblspc": No such file or directory
+FATAL:  could not open directory "pg_tblspc": No such file or directory
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 58296) running in data directory "/usr/local/var/postgres"?

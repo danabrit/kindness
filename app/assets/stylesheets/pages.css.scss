@@ -1,0 +1,35 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #414141;
+  color: whitesmoke;
+  font-family: Damascus, Osaka, Helvetica;
+}
+
+h1 {
+  text-align: center;
+}
+
+.random_act {
+  clear: both;
+  margin-bottom: 40px;
+}
+
+.random_act .name {
+  font-size: large;
+}
+
+.random_act .description {
+  font-size: small;
+}
+
+.random_act .costs {
+  font-size: x-small;
+}
+
+.random_act .costs .cost {
+  float: left;
+  margin-right: 20px;
+}
