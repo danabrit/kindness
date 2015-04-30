@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'acts/get_raks'
+  resources :acts, only: [:new, :create]
 
   get 'pages/home'
 

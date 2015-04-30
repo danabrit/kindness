@@ -1,0 +1,10 @@
+<h1>New Act of Kindness</h1>
+
+<%= form_for @act do |form| %>
+  <%= form.label :name %> <%= form.text_field :name %><br />
+  <%= form.label :description %> <%= form.text_area :description %><br />
+  <%= form.label :cost %> <%= form.select :cost, @costs %><br />
+  <%= form.label :effort %> <%= form.select :effort, @efforts %><br />
+  <%= form.label :time %> <%= form.select :time, @times %><br />
+  <%= form.submit %>
+<% end %>
