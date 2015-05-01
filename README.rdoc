@@ -1,5 +1,6 @@
 Random Acts of Kindness
-=====
+====
+
 The purpose of this application is to help people be better to one another.
 
 The smallest gestures can often make the biggest differences in the lives of people. Just knowing that there is another human being on the planet who bears you goodwill can make life brighter and more tolerable.
@@ -7,7 +8,8 @@ The smallest gestures can often make the biggest differences in the lives of peo
 This app gives you a number of new ideas to do just that. You can select a level of cost, effort, and time commitment that works best for you, or you can simply take random suggestions.
 
 Installation
-====
+===
+
 1) Clone this repo.
 2) cd into the cloned repo's directory.
 3) Run rake db:create
