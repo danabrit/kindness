@@ -1,6 +1,4 @@
-====
-Random Acts of Kindness
-====
+= Random Acts of Kindness
 
 The purpose of this application is to help people be better to one another.
 
@@ -8,13 +6,11 @@ The smallest gestures can often make the biggest differences in the lives of peo
 
 This app gives you a number of new ideas to do just that. You can select a level of cost, effort, and time commitment that works best for you, or you can simply take random suggestions.
 
-====
-Installation
-====
+= Installation
 
-1) Clone this repo.
-2) cd into the cloned repo's directory.
-3) Run rake db:create
-4) Run rake db:migrate
-5) TODO - Run rake task to add default kindnesses.
-6) Run rails s
+1. Clone this repo.
+2. cd into the cloned repo's directory.
+3. Run rake db:create
+4. Run rake db:migrate
+5. TODO - Run rake task to add default kindnesses.
+6. Run rails s
