@@ -23,6 +23,13 @@ class ActsController < ApplicationController
   end
 
   def create
+    @act = Act.new(params[ :act ])
+    if @act.save
+      flash[:success] = "The act of kindness was successfully saved!"
+      redirect_to new_acts_path
+    else
+      render new_acts_path
+    end
   end
 
   def get_raks
