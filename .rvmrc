@@ -1,1 +1,1 @@
-rvm use 2.0.0-p598@kindness --create
+rvm use 2.3.5@kindness --create
