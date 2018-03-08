@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.5.0'
 
+gem 'annotate'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'pg', '~> 0.18'
