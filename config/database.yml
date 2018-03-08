@@ -1,25 +1,26 @@
-development:
+default: &default
   adapter: postgresql
-  encoding: unicode
-  database: kindness_development
-  pool: 5
-  username: postgres
-  password: 
-
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: kindness_test
-  pool: 5
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: postgres
-  password: 
+
+development:
+  <<: *default
+  database: kindness_development
+  host: localhost
+  pool: 30
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: kindness_test
+  host: localhost
+
+staging:
+  <<: *default
+  database: kindness_production
 
 production:
-  adapter: postgresql
-  encoding: unicode
+  <<: *default
   database: kindness_production
-  pool: 5
-  timeout: 5000
-  username: postgres
-  password: 

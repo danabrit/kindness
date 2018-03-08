@@ -1,6 +1,6 @@
 class Act < ActiveRecord::Base
-  def cost_units(measurement)
-    "$" * measurement
+  def cost_units
+    "$" * cost
   end
 
   def effort_units(measurement)
@@ -11,7 +11,7 @@ class Act < ActiveRecord::Base
       "Medium"
     when 3
       "Hard"
-    end    
+    end
   end
 
   def time_units(measurement)
