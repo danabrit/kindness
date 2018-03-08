@@ -14,8 +14,8 @@ class Act < ActiveRecord::Base
     end
   end
 
-  def time_units(measurement)
-    case measurement
+  def time_units
+    case time
     when 1
       "Less than one hour"
     when 2

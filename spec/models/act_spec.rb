@@ -15,4 +15,12 @@ RSpec.describe Act, :type => :model do
       expect(build(:act, effort: 3).effort_units).to eq('Hard')
     end
   end
+
+  describe '#time_units' do
+    it "returns a string that correlates to an act's time" do
+      expect(build(:act, time: 1).time_units).to eq('Less than one hour')
+      expect(build(:act, time: 2).time_units).to eq('1-3 hours')
+      expect(build(:act, time: 3).time_units).to eq('More than 3 hours')
+    end
+  end
 end
