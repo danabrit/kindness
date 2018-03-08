@@ -7,4 +7,12 @@ RSpec.describe Act, :type => :model do
       expect(build(:act, cost: 3).cost_units).to eq('$$$')
     end
   end
+
+  describe '#effort_units' do
+    it "returns a word that correlates to an act's effort" do
+      expect(build(:act, effort: 1).effort_units).to eq('Easy')
+      expect(build(:act, effort: 2).effort_units).to eq('Medium')
+      expect(build(:act, effort: 3).effort_units).to eq('Hard')
+    end
+  end
 end

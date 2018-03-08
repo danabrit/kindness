@@ -3,8 +3,8 @@ class Act < ActiveRecord::Base
     "$" * cost
   end
 
-  def effort_units(measurement)
-    case measurement
+  def effort_units
+    case effort
     when 1
       "Easy"
     when 2
