@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-ruby '2.5.0'
+ruby '2.5.1'
 
 gem 'annotate'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'pg', '~> 0.18'
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 5.2.2'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
