@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
-  get 'get_raks' => 'acts#get_raks', as: :get_raks
+  get 'get_raks', to: 'acts#get_raks', as: :get_raks
 end
